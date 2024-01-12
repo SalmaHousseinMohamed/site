@@ -1,5 +1,6 @@
 
 from pathlib import Path
+import os
 from django.contrib.messages import constants as messages
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -103,7 +104,7 @@ DATABASES = {
         'USER': 'postgres',
         'PASSWORD': 'c5dA23B4aca1A1fGA3eEffEdAfBAA25F',
         'HOST': 'roundhouse.proxy.rlwy.net',
-        'PORT': '',
+        'PORT': '54340',
     }
 }
 
@@ -154,3 +155,5 @@ MEDIA_ROOT = BASE_DIR / 'static/images'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
