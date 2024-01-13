@@ -98,20 +98,7 @@ WSGI_APPLICATION = 'Ecommerce.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'railway',
-        'USER': 'postgres',
-        'PASSWORD': 'eddEb4bagF-CDc-2fdG*Af2-6d6dFEc3',
-        'HOST': 'roundhouse.proxy.rlwy.net',
-        'PORT': '52239',
-        'OPTIONS': {
-            'sslmode': 'require',
-        },
-    }
-}
-
+DATABASES = {'default': dj_database_url.config(default=os.getenv('DATABASE_URL', 'postgresql://postgres:eddEb4bagF-CDc-2fdG*Af2-6d6dFEc3@roundhouse.proxy.rlwy.net:52239/railway'))}
 
 
 # Password validation
