@@ -11,8 +11,7 @@
                 {% for category in categories %}
                 {% if not category.parent_category %}
                 <li class="parent-category">
-                    <img class="icon" src="{{% static category.image.url % }}" alt="">
-
+                    <img class="icon" src="{% static images/category.image.url % }" alt="">         
                     {% if category.subcategories.all %}
                    
                     <span class="side-menu-item">{{ category.name }}</span>
