@@ -11,8 +11,8 @@
                 {% for category in categories %}
                 {% if not category.parent_category %}
                 <li class="parent-category">
-                    <img class="icon" src="{% static images/category.image.url % }" alt="">         
-                    {% if category.subcategories.all %}
+                  <img class="icon" src="/static/{{ category.image.name }}" alt="">
+                  {% if category.subcategories.all %}
                    
                     <span class="side-menu-item">{{ category.name }}</span>
                     
@@ -47,8 +47,7 @@
                 <div class="ad-img-card">
                   <a href="{% url 'product_detail' product.id %}">
                     {% if product.image_set.all %}
-                      <img src="{% static  product.image_set.first.image.url %}" alt="{{ product.name }}">
-
+                      <img src="{{ product.image_set.first.image.url }}" alt="{{ product.name }}">
                     {% endif %}
                   </a>
                 </div>
