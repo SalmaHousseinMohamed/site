@@ -132,11 +132,13 @@ USE_I18N = True
 USE_TZ = True
 
 
-STATICFILES_DIRS = (
+STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'Ecommerce', 'static'),
-)
+]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+STATIC_URL = '/static/'  # Define the STATIC_URL
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
