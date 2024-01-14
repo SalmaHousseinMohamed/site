@@ -133,9 +133,10 @@ USE_TZ = True
 
 
 
+STATIC_URL = '/static/'
 MEDIA_URL = '/images/'
 
-STATIC_URL = '/static/'
+# Specify the directories where Django will look for static files
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
