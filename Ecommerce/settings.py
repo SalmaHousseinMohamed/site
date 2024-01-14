@@ -131,6 +131,7 @@ USE_I18N = True
 
 USE_TZ = True
 
+MEDIA_URL = '/images/'
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
