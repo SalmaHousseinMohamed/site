@@ -47,7 +47,7 @@
                 <div class="ad-img-card">
                   <a href="{% url 'product_detail' product.id %}">
                     {% if product.image_set.all %}
-                      <img src="{{% static  product.image_set.first.image.url %}}" alt="{{ product.name }}">
+                      <img src="{% static  product.image_set.first.image.url %}" alt="{{ product.name }}">
 
                     {% endif %}
                   </a>
