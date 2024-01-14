@@ -133,19 +133,13 @@ USE_TZ = True
 
 
 
-# Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
 MEDIA_URL = '/images/'
 
 # Specify the directories where Django will look for static files
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
-]
-
-# Specify the directory where 'collectstatic' will gather static files for deployment
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
-# Specify the directory where media files will be stored
 MEDIA_ROOT = BASE_DIR / 'static/images'
 
 # Default primary key field type
