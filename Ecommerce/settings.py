@@ -98,7 +98,21 @@ WSGI_APPLICATION = 'Ecommerce.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {'default': dj_database_url.config(default=os.getenv('DATABASE_URL', 'postgresql://postgres:cc54D2g6FCc2GdDbGF42GA16b3e14dAF@postgres.railway.internal:5432/railway'))}
+# DATABASES = {'default': dj_database_url.config(default=os.getenv('DATABASE_URL', 'postgresql://postgres:GcG4b-cCE2eeA4BG-5*ECDdCc-E5eE2b@viaduct.proxy.rlwy.net:55270/railway'))}
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'cc54D2g6FCc2GdDbGF42GA16b3e14dAF',
+        'HOST': 'viaduct.proxy.rlwy.net',
+        'PORT': '51490',
+        'OPTIONS': {
+            'sslmode': 'require',
+        },
+    }
+}
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
