@@ -98,7 +98,7 @@ WSGI_APPLICATION = 'Ecommerce.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {'default': dj_database_url.config(default=os.getenv('DATABASE_URL', 'postgresql://postgres:eddEb4bagF-CDc-2fdG*Af2-6d6dFEc3@roundhouse.proxy.rlwy.net:52239/railway'))}
+DATABASES = {'default': dj_database_url.config(default=os.getenv('DATABASE_URL', 'postgresql://postgres:GcG4b-cCE2eeA4BG-5*ECDdCc-E5eE2b@viaduct.proxy.rlwy.net:55270/railway'))}
 
 
 # Password validation
@@ -135,6 +135,10 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,  'static'),
+]
+
+STATICFILES_DIRS = [
+    BASE_DIR / 'static'
 ]
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
