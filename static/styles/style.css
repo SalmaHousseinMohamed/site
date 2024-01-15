@@ -5,18 +5,19 @@ body{
 /* body style end here */
 .logo-container{
   margin: 0;
-    background-color: #00043C;
+    background-color:#00043C;
 }
+
 .logo-img img{
   width: 13%;
   height: 133px;
   border-radius: 200px;
-  margin-left: 80px;
+  margin-left: 113px;
 }
 .navbar-container{
   display: flex;
   justify-content: space-around;
-  margin: 3px;
+  margin: 0;
   background-color: #e7e7e7a1;
 }
 .navbar ul li {
@@ -31,7 +32,7 @@ body{
           font-size: 14px;
           text-decoration: none;
           padding: 5px;
-          color: #000;
+          color: #00043C;
       } 
 
       .navbar :hover{
@@ -39,18 +40,16 @@ body{
           color: beige;
       }
       .search-panel input{
-        display: inline-block;
-        width: 160px;
+        width: 227px;
         height: 17px;
+        border-radius: 12px;
         padding: 10px;
         background-color: #fff;
-        margin-left: -15px;
+        margin-top: 8px;
 
       }
       .search-panel button{
-        background-color: #00043C;
-        margin-left: -5px;
-
+        background-color: #464863;
         color: #fff;
         width: 79px;
         height: 44px;
@@ -70,7 +69,7 @@ body{
           font-size: 14px;
           text-decoration: none;
           padding: 5px;
-          color: #000;
+          color: #00043C;
 
       }
 
@@ -115,7 +114,7 @@ body{
       "side-menu products";
         gap: 10px;
         margin-top: 30px;
-        margin: 0 auto;
+        margin: 8px auto;
         width: 86%;
 }
 .title h2{
@@ -167,7 +166,7 @@ border-radius: 17px;
 
 
 .advertise-info{
-  margin: 2px;
+  margin: 6px;
 margin-bottom: 13px;
 font-family: 'Times New Roman', Times, serif;
 font-size: 15px;
@@ -1214,7 +1213,7 @@ background-color: #fbcc150d;
 color: #C70039A8;
 font-size: 16px;
 position: relative;
-right: 22px;
+right: 32px;
 
 
 }
@@ -1498,23 +1497,22 @@ font-size:30px;
 
   .search-panel {
     flex: 1;
-    margin-top: 31px;
-    /* margin-right: 20px; */
+    margin-top: 36px;
 }
   
 
   .search-panel input{
-    width: 103px;
+    width: 133px;
     height: 37px;
-
-     box-sizing: border-box; 
+    box-sizing: border-box;
+    border: 1px solid #d9d5d5;
   }
  .search-panel button {
-    color: #fff;
-    width: 35px;
-    height: 36px;
-    padding: 21px 1px;
-    padding-top: 12px;
+  color: #fff;
+  width: 29px;
+  height: 37px;
+  padding: 21px 1px;
+  padding-top: 9px;
  }
 
   .navbar,
@@ -1551,7 +1549,7 @@ font-size:30px;
 
   .side-menu {
     grid-area: side-menu;
-    background-color:#D72323;
+    background-color:#bf3c53;
     width: 129px;
     color: #fff;
     font-family: Arial, sans-serif;
@@ -1569,13 +1567,12 @@ font-size:30px;
     display: flex;
     flex-wrap: wrap;
     grid-area: products;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgb(0 0 0 / 86%);
     width: 100%;
-    position: relative;
-    right: 15px;
+
 }
   .products-container {
-    background-color: #e3e33c;
+    background-color: #fff;
     display: grid;
     grid-template-areas:
         "side-menu header "
@@ -1589,8 +1586,8 @@ font-size:30px;
   .ad-img-container {
     border-radius: 14px;
     border: 1px solid #999;
-    width: 126px;
-    margin: 1px;
+    width: 258px;
+    margin: 29px;
     margin-top: 44px;
 }
 .navbar a{
