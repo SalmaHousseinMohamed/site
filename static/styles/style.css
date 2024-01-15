@@ -1557,31 +1557,39 @@ font-size:30px;
     font-family: Arial, sans-serif;
     
   }
+  .ad-design img {
+    width: 97%;
+    height: auto;
+    padding-left: 4px;
+    margin-top: 20px;
+   
+}
   .products {
     display: flex;
     flex-wrap: wrap;
-    margin: 5px;
     grid-area: products;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
+    position: relative;
+    right: 14px;
 }
   .products-container {
-    background-color: beige;
+    background-color: #e3e33c;
     display: grid;
     grid-template-areas:
         "side-menu header "
         "side-menu title"
         "side-menu products";
-    gap: 10px;
+    gap: 1px;
     margin-top: 30px;
-    margin: 2px auto;
+    margin: 0;
     width: 100%;
 }
   .ad-img-container {
-border-radius: 12px;
+    border-radius: 8px;
     border: 1px solid #999;
-    width: 112px;
-    margin: 10px;
+    width: 124px;
+    margin: 4px;
     margin-top: 44px;
 }
 .navbar a{
