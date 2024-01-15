@@ -1552,15 +1552,16 @@ font-size:30px;
   .side-menu {
     grid-area: side-menu;
     background-color:#D72323;
-    width: 137px;
+    width: 129px;
     color: #fff;
     font-family: Arial, sans-serif;
     
   }
   .ad-design img {
-    width: 97%;
+    width: 96%;
+    position: relative;
+    right: 37px;
     height: auto;
-    padding-left: 4px;
     margin-top: 20px;
    
 }
@@ -1571,7 +1572,7 @@ font-size:30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     position: relative;
-    right: 14px;
+    right: 15px;
 }
   .products-container {
     background-color: #e3e33c;
@@ -1586,10 +1587,10 @@ font-size:30px;
     width: 100%;
 }
   .ad-img-container {
-    border-radius: 8px;
+    border-radius: 14px;
     border: 1px solid #999;
-    width: 124px;
-    margin: 4px;
+    width: 126px;
+    margin: 1px;
     margin-top: 44px;
 }
 .navbar a{
