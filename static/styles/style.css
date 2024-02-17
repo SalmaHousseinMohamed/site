@@ -1492,7 +1492,7 @@ font-size:30px;
   }
 
   .navbar-container {
-    flex-wrap: wrap; /* Allow the flex items to wrap to the next line */
+    display: flex;
   }
 
   .search-panel {
@@ -1568,7 +1568,7 @@ font-size:30px;
     flex-wrap: wrap;
     grid-area: products;
     box-shadow: 0 4px 8px rgb(0 0 0 / 86%);
-    width: 100%;
+    width: 91%;
 
 }
   .products-container {
@@ -1583,12 +1583,12 @@ font-size:30px;
     margin: 0;
     width: 100%;
 }
-  .ad-img-container {
-    border-radius: 14px;
-    border: 1px solid #999;
-    width: 258px;
-    margin: 29px;
-    margin-top: 44px;
+.ad-img-container {
+  border-radius: 14px;
+  border: 1px solid #999;
+  width: 224px;
+  margin: 5px;
+  margin-top: 44px;
 }
 .navbar a{
  display: inline-block;
